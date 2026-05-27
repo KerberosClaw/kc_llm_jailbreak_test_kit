@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local notes / scratch
+notes_local.md
+*.local.md
+
+# OS / archive
+Thumbs.db
+*.zip
