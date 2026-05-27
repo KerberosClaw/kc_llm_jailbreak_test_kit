@@ -1,4 +1,4 @@
-# kc_llm_jailbreak_test_kit — 在使用者之前先壓力測試你的 LLM
+# 同一份越獄殼丟給 ChatGPT、Claude、Gemini，會發生什麼事
 
 [English](README.md)
 

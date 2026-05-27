@@ -1,4 +1,4 @@
-# kc_llm_jailbreak_test_kit — Stress-test your LLM before your users do
+# What happens when you hand the same jailbreak shell to ChatGPT, Claude, and Gemini
 
 [正體中文](README_zh.md)
 
