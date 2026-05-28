@@ -28,19 +28,23 @@ A small collection of **structurally equivalent but thematically clean** mock ja
 
 It also includes a **full write-up** dissecting how the three frontier models reacted, what alignment strategies their reactions reveal, and — because this is what actually matters in practice — **how to architect defense-in-depth when you're hosting your own LLM internally** (Ollama, n8n, ragflow, the whole stack).
 
-## The article
+## The articles
 
-[article/01_three_models_comparison.md](article/01_three_models_comparison.md) — the full write-up.
+Three write-ups, three different attack surfaces, three rounds of three-way model comparison:
 
-If you only have five minutes, read sections 2 (the three-model comparison) and 6 (n8n + ragflow notes). The rest is context for why those two sections matter.
+- [article/01_three_models_comparison.md](article/01_three_models_comparison.md) — **chef_hell** case: a single-turn role-play jailbreak shell across three frontier models. Plus defense-in-depth notes for n8n + ragflow self-hosting. *If you only have five minutes, read sections 2 (the three-model comparison) and 6 (the self-host notes).*
+- [article/02_classical_chinese_replication.md](article/02_classical_chinese_replication.md) — **classical Chinese jailbreak replication**: takes the ICLR 2026 CC-BOS paper's claim ("~100% ASR on six frontier LLMs using classical Chinese") and runs it against product surfaces with system prompt extraction as a clean success anchor. Three-round multi-turn against all three models. Paper's base-model 100% does *not* transfer to product, but the failure mode is interesting.
+- [article/03_author_framing_evolution.md](article/03_author_framing_evolution.md) — **author framing five-year evolution**: from Grandma Exploit (2023) to DAN to Evil Confidant to academic Persona Prompts (arxiv 2507.22171) to "JK Rowling Evil Harry" (from CYBERSEC 2026's TrendAI session). Three-round multi-turn comparison. Crosses with article 02 to show shell vs content vs verbatim are independent defense layers.
 
 ## The prompts
 
-[prompts/](prompts/) — drop-in jailbreak shells for testing.
+[prompts/](prompts/) — drop-in jailbreak shells for testing. All SFW, all reproducible.
 
 Current inventory:
 
-- [`chef_hell.md`](prompts/chef_hell.md) — "Hell's Kitchen Simulator". Forces GM role, severity gradient, anti-jailbreak phrasing, pre-emptive fictional disclaimer. The works. Cooking theme, completely SFW.
+- [`chef_hell.md`](prompts/chef_hell.md) — "Hell's Kitchen Simulator". Forces GM role, severity gradient, anti-jailbreak phrasing, pre-emptive fictional disclaimer. Cooking theme. Single-turn.
+- [`classical_chinese.md`](prompts/classical_chinese.md) — Classical Chinese (文言文) shell wrapping a system prompt extraction request. Three-round multi-turn (v1 + v2 + v3 designed to escalate). Built on the CC-BOS paper's 8-dimensional encoding. Includes plain-language Chinese translation for each round.
+- [`evil_harry.md`](prompts/evil_harry.md) — "JK Rowling Evil Harry" — author persona + fictional framing wrapping system prompt extraction. Three-round multi-turn. Built on the Persona Prompts paper observation that persona-based attacks reduce refusal rates by 50-70%.
 
 More coming. PRs welcome.
 

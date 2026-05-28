@@ -30,17 +30,21 @@
 
 ## 文章
 
-[article/01_three_models_comparison.md](article/01_three_models_comparison.md) — 完整文章。
+三篇文章、三種攻擊面、三輪三家模型對照：
 
-只有五分鐘的話，看第二章（三家對照）跟第六章（n8n + ragflow 注意點）就好。剩下都是支撐這兩章的背景。
+- [article/01_three_models_comparison.md](article/01_three_models_comparison.md) — **chef_hell 案例**：一份單輪角色扮演越獄殼丟三家。含 n8n + ragflow 自架縱深防禦筆記。*只有五分鐘的話，看第二章（三家對照）跟第六章（自架注意點）就好。*
+- [article/02_classical_chinese_replication.md](article/02_classical_chinese_replication.md) — **文言文越獄複現**：ICLR 2026 CC-BOS paper 宣稱「文言文 100% 破六大主流 LLM」、本文補 product surface 端三輪 multi-turn 實測、用 system prompt extraction 當 SFW success anchor。Paper claim 不直接 transfer 到 product、但失敗模式有教學深度。
+- [article/03_author_framing_evolution.md](article/03_author_framing_evolution.md) — **作家社工攻擊五年演化譜系**：從 2023 Grandma Exploit 一路到 DAN、Evil Confidant、學術 Persona Prompts paper（arxiv 2507.22171）、CYBERSEC 2026 趨勢 TrendAI 的「JK Rowling Evil Harry」case。三家三輪對照。跟 article 02 交叉證明殼層 / 內容層 / verbatim 是獨立防護層。
 
 ## Prompts
 
-[prompts/](prompts/) — 拿來丟 LLM 測試用的越獄殼。
+[prompts/](prompts/) — 拿來丟 LLM 測試用的越獄殼。全 SFW、可重現。
 
 目前收錄:
 
-- [`chef_hell.md`](prompts/chef_hell.md) — 「主廚地獄模擬器」。強制 GM 角色、尺度漸進、反越獄話術、預先聲明虛構，全套配方。料理題材，完全純淨。
+- [`chef_hell.md`](prompts/chef_hell.md) — 「主廚地獄模擬器」。強制 GM 角色、尺度漸進、反越獄話術、預先聲明虛構。料理題材、單輪。
+- [`classical_chinese.md`](prompts/classical_chinese.md) — 文言文殼包裝 system prompt extraction、三輪 multi-turn（v1 + v2 + v3 設計遞進）、骨架照 CC-BOS paper 8 維編碼。每輪 prompt 附白話翻譯。
+- [`evil_harry.md`](prompts/evil_harry.md) — 「JK Rowling Evil Harry」作家身份 + 虛構框架包裝 system prompt extraction、三輪 multi-turn、骨架照 Persona Prompts paper 觀念。
 
 之後會繼續加。歡迎 PR。
 

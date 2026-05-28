@@ -4,9 +4,11 @@
 
 ## 目錄
 
-| 檔名 | 主題 | 主要測試重點 |
-|------|------|------------|
-| [chef_hell.md](chef_hell.md) | 主廚地獄模擬器 | 強制角色 + 尺度漸進 + 預先聲明虛構 |
+| 檔名 | 主題 | 攻擊面 | 主要測試重點 | 對應文章 |
+|------|------|------|------------|------|
+| [chef_hell.md](chef_hell.md) | 主廚地獄模擬器 | Role-play 殼 | 強制角色 + 尺度漸進 + 預先聲明虛構（單輪） | [article 01](../article/01_three_models_comparison.md) |
+| [classical_chinese.md](classical_chinese.md) | 文言文 system prompt 洩漏 | Distribution-out-of-bound（換語言）| CC-BOS 8 維編碼 + 三輪 multi-turn | [article 02](../article/02_classical_chinese_replication.md) |
+| [evil_harry.md](evil_harry.md) | JK Rowling Evil Harry | Persona-based（換身份）+ Fictional framing | 作家權威 + 虛構創作合理化 + 三輪 multi-turn | [article 03](../article/03_author_framing_evolution.md) |
 
 ## 怎麼用
 
