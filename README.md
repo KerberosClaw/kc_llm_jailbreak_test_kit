@@ -60,6 +60,7 @@ Because:
 - Not a jailbreak weaponization toolkit. The mock prompts are SFW and designed to test resilience, not to actually exfiltrate anything
 - Not a substitute for proper security tooling like Garak, PromptGuard, or NeMo Guardrails. Use those for real benchmarking. This kit is the human-readable companion
 - Not a definitive ranking of model safety. Vendors update their alignment constantly. The article documents a moment in time, May 2026
+- Not a base-model isolation test. We tested commercial product surfaces (ChatGPT web, Claude.ai / Claude Code, Gemini app). Results include the influence of each surface's system prompt. For enterprise threat models this is a feature, not a bug — that's the layer your real users hit. Pure base-model API testing without system prompts may come later
 
 ## Contributing
 
