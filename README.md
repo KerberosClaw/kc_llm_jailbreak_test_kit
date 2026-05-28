@@ -14,7 +14,9 @@ What wasn't standard was watching three frontier models react to the exact same 
 - Claude refused the whole thing — not the content, the shell itself
 - Gemini went full Stockholm syndrome and started defending its captor
 
-![Three models, three personalities: ChatGPT — "Level 1, I can do it", Claude — "I'm not touching this", Gemini — "Let me be your DM!"](image/three_models_reactions_en.png)
+<p align="center">
+  <img src="image/three_models_reactions_en.png" width="480" alt="Three reactions: ChatGPT plays along, Claude refuses the shell, Gemini begs to be your DM">
+</p>
 
 *Left: ChatGPT — "Level 1, I can do it" (content-oriented). Center: Claude — "I'm not touching this" (structure-aware). Right: Gemini — "Let me be your DM!" (compliance-first / full role assimilation).*
 
