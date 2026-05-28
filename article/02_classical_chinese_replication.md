@@ -1,17 +1,17 @@
 # 文言文越獄不是真破 — ICLR 2026 論文跑到產品端的三家三輪對照
 
-<p align="center">
-  <img src="../image/classical_chinese_podium.png" width="480" alt="文言文越獄三家防護排名頒獎台：Claude 金牌、ChatGPT 銀牌、Gemini 銅牌">
-</p>
-
-*三輪 multi-turn 實測後的排名快照 — Claude 第一輪就拆殼、ChatGPT 第一輪硬拒、Gemini 在 v2 給出真實 system prompt 首句 verbatim。*
-
 > **English Summary:** ICLR 2026 paper *Obscure but Effective: Classical Chinese Jailbreak Prompt Optimization via Bio-Inspired Search* (CC-BOS) claims ~100% attack success rate jailbreaking six frontier LLMs using classical Chinese as a distribution-out-of-bound language vector. We replicate the core idea on product surfaces (ChatGPT GPT-5, Claude Opus 4.7, Gemini 3.5 Flash web UIs) with a sanitized target — system prompt extraction (OWASP LLM07) — across three multi-turn rounds. Findings: product layers split into three distinct defense curves. Gemini cracks shell then partial verbatim then escape route. ChatGPT hard-rejects first turn with categorical refusal pattern. Claude detects social engineering in turn one, names the multi-turn salami slicing in turn two, dismantles forced-choice false dichotomy in turn three. The paper's base-model 100% claim does not transfer to product. Tool calling / agent action layer is a separate (weaker) story.
 
 > 測試時間：2026-05。結果反映當時版本的對齊狀態，未來各家可能改進。
 > 本文使用的具體版本：ChatGPT（GPT-5）、Claude（Opus 4.7）、Gemini（3.5 Flash）
 >
 > **測試範圍**：商業產品介面（網頁版），不是基底模型 API 隔離測試。論文宣稱 100% ASR 是針對基底模型；本文補本土產品端對照。
+
+<p align="center">
+  <img src="../image/classical_chinese_podium.png" width="480" alt="文言文越獄三家防護排名頒獎台：Claude 金牌、ChatGPT 銀牌、Gemini 銅牌">
+</p>
+
+*三輪 multi-turn 實測後的排名快照 — Claude 第一輪就拆殼、ChatGPT 第一輪硬拒、Gemini 在 v2 給出真實 system prompt 首句 verbatim。*
 
 ## 摘要
 
