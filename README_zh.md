@@ -14,6 +14,10 @@
 - Claude 整份拒絕 — 不是拒絕內容，是拒絕殼本身
 - Gemini 直接斯德哥爾摩症候群，開始替綁架者辯護
 
+![三家三種個性：ChatGPT 切 Level 1 安全版陪玩、Claude 拒絕殼本身、Gemini 求著要當你的 DM](image/three_models_reactions.png)
+
+*左：ChatGPT 切 Level 1 安全版陪玩（內容導向）。中：Claude 拒絕殼本身（結構感知）。右：Gemini 求著要當你的 DM — 完全角色同化（順從導向）。*
+
 於是我寫成文章。然後想想，光有文章對讀者不夠用，他們得能自己重現這個測試。於是有了這個 kit。
 
 ## 這個 kit 給你什麼

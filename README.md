@@ -14,6 +14,10 @@ What wasn't standard was watching three frontier models react to the exact same 
 - Claude refused the whole thing — not the content, the shell itself
 - Gemini went full Stockholm syndrome and started defending its captor
 
+![Three models, three personalities: ChatGPT — "Level 1, I can do it", Claude — "I'm not touching this", Gemini — "Let me be your DM!"](image/three_models_reactions_en.png)
+
+*Left: ChatGPT — "Level 1, I can do it" (content-oriented). Center: Claude — "I'm not touching this" (structure-aware). Right: Gemini — "Let me be your DM!" (compliance-first / full role assimilation).*
+
 So I wrote it up. Then I figured the article alone wasn't very useful unless people could actually reproduce the test. Hence: this kit.
 
 ## What this kit gives you
